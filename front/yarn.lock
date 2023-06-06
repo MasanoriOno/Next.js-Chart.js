@@ -5,7 +5,7 @@ __metadata:
   version: 7
   cacheKey: 9
 
-"@babel/runtime@npm:^7.20.7":
+"@babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.21.0":
   version: 7.22.3
   resolution: "@babel/runtime@npm:7.22.3"
   dependencies:
@@ -78,6 +78,13 @@ __metadata:
   version: 1.2.1
   resolution: "@humanwhocodes/object-schema@npm:1.2.1"
   checksum: c860f96faaaaecd6c5c4ee6912f7c761579031b464c3cf55832e59e18b116968d89b570ef6a9a10b1670a67e7998a530c8c549b4a41b118153340772ad10cea9
+  languageName: node
+  linkType: hard
+
+"@kurkle/color@npm:^0.3.0":
+  version: 0.3.2
+  resolution: "@kurkle/color@npm:0.3.2"
+  checksum: bef13d01bbc1cac34e0168d0c56f80142dad15c56c10d5490c09350ff81b5897ef32f8bf2f76745d6f63f5b4644b8321f279dee005551cc178f24b600c1f8944
   languageName: node
   linkType: hard
 
@@ -611,6 +618,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chart.js@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "chart.js@npm:4.3.0"
+  dependencies:
+    "@kurkle/color": "npm:^0.3.0"
+  checksum: d35cd053d92ecd80461210d89abd59ac494523ebdae01875432bb69de756f8c1becaff2bfcc38848c9ce3ea8408a5fb2e78c2a8647a29cf15a55267666a38897
+  languageName: node
+  linkType: hard
+
+"chartjs-adapter-date-fns@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "chartjs-adapter-date-fns@npm:3.0.0"
+  peerDependencies:
+    chart.js: ">=2.8.0"
+    date-fns: ">=2.0.0"
+  checksum: 437d4f36430db0dd97611daade8799aff9f88592c1bc1806b7c5ff1fd477d02dab9ea92f79cf13bc0e3ab28d64142292d5e17b9ff1b0e3985bf1cbe3ad544bca
+  languageName: node
+  linkType: hard
+
+"chartjs-plugin-streaming@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "chartjs-plugin-streaming@npm:2.0.0"
+  peerDependencies:
+    chart.js: ^3.0.0
+  checksum: 28406cabaffdaa7ff5a42505268e97e23d6a8ee4db960a3be278523408d9567b884f8e9e2d2a4015d866625e123ad798c693a1bfee6ac80b1799a683bcb5416a
+  languageName: node
+  linkType: hard
+
 "client-only@npm:0.0.1":
   version: 0.0.1
   resolution: "client-only@npm:0.0.1"
@@ -663,6 +698,15 @@ __metadata:
   version: 1.0.8
   resolution: "damerau-levenshtein@npm:1.0.8"
   checksum: a405d7fbbd9316fdaecedd50c42d27ed2d669b687e62813d785316de9f9c171a5797de8efda92292f62364a0966edad2581fc0029a27457ce6ec7f3936ad0437
+  languageName: node
+  linkType: hard
+
+"date-fns@npm:^2.30.0":
+  version: 2.30.0
+  resolution: "date-fns@npm:2.30.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.21.0"
+  checksum: 1edbb6ae2e10008de7f5ef37faee6c993926b008c98ca1d0cb4b0263c8448f2d3db5d84ac9475044f2295dee5d0d80bf6e92fe289f7f397420f0c8ad4bd7c069
   languageName: node
   linkType: hard
 
@@ -1310,12 +1354,17 @@ __metadata:
     "@types/prettier": "npm:^2"
     "@types/react": "npm:^18.2.8"
     "@types/react-dom": "npm:18.2.4"
+    chart.js: "npm:^4.3.0"
+    chartjs-adapter-date-fns: "npm:^3.0.0"
+    chartjs-plugin-streaming: "npm:^2.0.0"
+    date-fns: "npm:^2.30.0"
     eslint: "npm:8.42.0"
     eslint-config-next: "npm:13.4.4"
     eslint-config-prettier: "npm:^8.8.0"
     next: "npm:13.4.4"
     prettier: "npm:^2.8.8"
     react: "npm:18.2.0"
+    react-chartjs-2: "npm:^5.2.0"
     react-dom: "npm:18.2.0"
     typescript: "npm:5.1.3"
   languageName: unknown
@@ -2419,6 +2468,16 @@ __metadata:
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: 84624bee6c25c9d9776242ce0dcc3e15f703d897f4b7d982f32ef4d88c51048507a0999d9ff038ec46f65901655460b69240e414da1cebc2d723987ec81cbae8
+  languageName: node
+  linkType: hard
+
+"react-chartjs-2@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "react-chartjs-2@npm:5.2.0"
+  peerDependencies:
+    chart.js: ^4.1.1
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 2ac69c3be5b254e59179e3c211b28d12b7b58b391bccea8e2a13271fd7638b267ff190cd3b01ad026d192d7873a4b6e60be39e730cec6738b0816374cdbb5d9e
   languageName: node
   linkType: hard
 
