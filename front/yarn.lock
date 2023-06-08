@@ -646,6 +646,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chartjs-plugin-zoom@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "chartjs-plugin-zoom@npm:2.0.1"
+  dependencies:
+    hammerjs: "npm:^2.0.8"
+  peerDependencies:
+    chart.js: ">=3.2.0"
+  checksum: ebcf9ac25a0703aae1216bfd931532846fb2a6ad186bfbbd44c59c38b05b85cbe6933c1bdbf4eb31f02fb33e6f0b146eb3f237d046b111c08c7d34c7102bc72e
+  languageName: node
+  linkType: hard
+
 "client-only@npm:0.0.1":
   version: 0.0.1
   resolution: "client-only@npm:0.0.1"
@@ -1357,6 +1368,7 @@ __metadata:
     chart.js: "npm:^4.3.0"
     chartjs-adapter-date-fns: "npm:^3.0.0"
     chartjs-plugin-streaming: "npm:^2.0.0"
+    chartjs-plugin-zoom: "npm:^2.0.1"
     date-fns: "npm:^2.30.0"
     eslint: "npm:8.42.0"
     eslint-config-next: "npm:13.4.4"
@@ -1538,6 +1550,13 @@ __metadata:
   version: 1.4.0
   resolution: "graphemer@npm:1.4.0"
   checksum: a4ee139533e1d1683edb24eaf3e598451e7f1577da3dfc68f247f0601d5d11d264d0ccfad3de3bfcabbed891140fbae84c0403b9d68f4fcb6431c418f971434e
+  languageName: node
+  linkType: hard
+
+"hammerjs@npm:^2.0.8":
+  version: 2.0.8
+  resolution: "hammerjs@npm:2.0.8"
+  checksum: 3778ddf838e8683e55300ebc8065cba5fffa2d023079b8d813e826657ec3e0f0c38d9b06e8597c9e5aa3baa2113659c83b7b66d61431dc0707f264a86d0db30b
   languageName: node
   linkType: hard
 

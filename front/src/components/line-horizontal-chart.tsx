@@ -1,5 +1,6 @@
 import React from 'react'
 import { Line } from 'react-chartjs-2'
+import { ja } from 'date-fns/locale'
 
 export const LintHorizontalChart = () => {
   return (
@@ -37,7 +38,7 @@ export const LintHorizontalChart = () => {
               },
               adapters: {
                 date: {
-                  //   locale: ja,
+                  locale: ja,
                 },
               },
               time: {
@@ -67,6 +68,34 @@ export const LintHorizontalChart = () => {
               },
               min: 0,
               max: 100,
+            },
+          },
+          interaction: {
+            intersect: false,
+          },
+          plugins: {
+            zoom: {
+              pan: {
+                enabled: true,
+                mode: 'x',
+              },
+              zoom: {
+                pinch: {
+                  enabled: false,
+                },
+                wheel: {
+                  enabled: true,
+                },
+                mode: 'x',
+              },
+              limits: {
+                x: {
+                  minDelay: 0,
+                  maxDelay: 4000,
+                  minDuration: 1000,
+                  maxDuration: 20000,
+                },
+              },
             },
           },
         }}
