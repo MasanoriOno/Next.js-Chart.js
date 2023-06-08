@@ -93,9 +93,9 @@ export const LintHorizontalChart = () => {
                   minDelay: 0,
                   maxDelay: 4000,
                   minDuration: 1000,
-                  maxDuration: 20000
+                  maxDuration: 20000,
                 },
-              }
+              },
             },
           },
         }}

@@ -11,9 +11,9 @@ import type { NextPage } from 'next'
 import { LintHorizontalChart } from '@/components/line-horizontal-chart'
 
 const Index: NextPage<void> = () => {
-  const meta = Chart
   return (
     <>
+      {/* グラフ描写はできるが、グラフホバー時に謎のエラーが出てしまう。 */}
       <LintHorizontalChart />
     </>
   )
