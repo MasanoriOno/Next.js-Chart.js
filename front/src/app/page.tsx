@@ -10,7 +10,12 @@ const Index: NextPage<void> = () => {
       <p>グラフ表示テスト</p>
       <p>↓各リンク</p>
       {/* グラフ描写はできるが、グラフホバー時に謎のエラーが出てしまう。 */}
-      <Link href={`/graph/chart-js`}>Chart.js-Graph</Link>
+      <div>
+        <Link href={`/graph/chart-js`}>Chart.js-Graph</Link>
+      </div>
+      <div>
+        <Link href={`/graph/apex-charts`}>ApexChart-Graph</Link>
+      </div>
     </>
   )
 }
