@@ -1,5 +1,12 @@
 'use client'
-import Chart from 'react-apexcharts'
+import dynamic from 'next/dynamic'
+import { Props as ApexChartProps } from 'react-apexcharts'
+
+// @typesが存在しないので、以下の形でChartのプロパティに型付与。
+// https://github.com/apexcharts/react-apexcharts/issues/368
+const Chart = dynamic<ApexChartProps>(() => import('react-apexcharts'), {
+  ssr: false,
+})
 
 export default function ApexChartGraph() {
   const series = [
@@ -8,7 +15,7 @@ export default function ApexChartGraph() {
       data: [43, 53, 50, 57],
     },
   ]
-  const options = {
+  const options: ApexChartProps = {
     chart: {
       id: 'simple-bar',
       zoom: {
@@ -21,8 +28,12 @@ export default function ApexChartGraph() {
       },
     },
     xaxis: {
-      categories: [1, 2, 3, 4], //will be displayed on the x-asis
+      categories: [1, 2, 3, 4],
     },
   }
-  return <Chart type="line" options={options} series={series} />
+  return (
+    <>
+      <Chart type="line" options={options} series={series} />
+    </>
+  )
 }
